@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name = "viewport" content=" width=device-width, initial-scale = 1">
+    <meta charset="UTF-8">
+    <title>Поддержка — Антижара</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="help-style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <selection> <!-- секция заголовка, шапка-->
+       <header class="header">
+         <a href="index.html" class="logo-link">
+    <div class="logotype">
+        <img src="logogo.png" alt="Логотип">
+    </div>
+</a>
+
+<a href="index.html" class="header-link">
+    <div class="nunito">
+        <h1 class="header-title">АНТИЖАРА</h1>
+    </div>
+</a>
+           <div class="menu-wrapper">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="burger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </label>
+  <nav class="menu">
+    <ul class="menu-list">
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="help.html">Поддержка</a></li>
+    <li><a href="register.html">Регистрация</a></li>
+      <button id="theme-toggle" class="theme-toggle"></button>
+
+    </ul>
+  </nav>
+</div>
+
+</header>
+</selection>
+
+<main class="support-page">
+    <section class="support-contact-block">
+        <div class="bg-square sq-1"></div>
+        <div class="bg-square sq-2"></div>
+        <div class="bg-square sq-3"></div>
+        <div class="bg-square sq-4"></div>
+
+        <form class="support-contact-form">
+            <h2>Contact</h2>
+
+            <div class="form-row">
+                <div class="input-block">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-block">
+                    <label for="tg">Телеграмм для связи</label>
+                    <input type="text" id="tg" name="tg">
+                </div>
+            </div>
+
+            <div class="input-block wide">
+                <label for="message">Напишите ваше сообщение здесь</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="support-submit">Отправить</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer-grid">
+    <div class="footer-section about">
+        <h4>About Us</h4>
+    <p>Маленькая компания с большим потенциалом.<br> Больше информации о нас можно получить через соцсети:</p>
+        <div class="footer-socials">
+            <a href="#" class="footer-social-btn instagram" title="Instagram">
+                <img src="inst.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer-social-btn apple" title="Apple">
+                <img src="apple.png" alt="Apple">
+            </a>
+            <a href="#" class="footer-social-btn telegram" title="Telegram">
+                <img src="telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-section quick">
+        <h4>Quick Links</h4>
+        <a href="about.html">FAQ</a>
+        <a href="help.html">HELP</a>
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEWS</a>
+    </div>
+
+    <div class="footer-section shop">
+        <h4>Shop</h4>
+    <a href="index.html" class="footer-filter" data-filter="all">ALL АССОРТИМЕНТ</a>
+    <a href="index.html" class="footer-filter" data-filter="шоколадное">CHOCOLATE</a>
+    <a href="index.html" class="footer-filter" data-filter="пломбир">PLOMBIR</a>
+    <a href="index.html" class="footer-filter" data-filter="фруктовое">FRUIT</a>
+    <a href="index.html" class="footer-filter" data-filter="ванильное">VANILLA</a>
+    </div>
+
+    <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <a href="tel:77777777777777777777">77777777777777777777</a>
+        <a href="mailto:antijara@gmail.com">antijara@gmail.com</a>
+    </div>
+</footer>
+<script src="theme.js"></script>
+<script src="javka.js"></script>
+<script src="footer-js.js"></script>
+</body>
+</html>

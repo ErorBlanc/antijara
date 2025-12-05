@@ -1,0 +1,583 @@
+.gallery-section {
+    width: 100%;
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 100%);
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+}
+
+.gallery-container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.gallery-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #5c094e;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-content: center;
+  align-items: start;
+}
+
+.gallery-card {
+  position: relative;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(92, 9, 78, 0.15);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+}
+
+.gallery-card:hover {
+  transform: translateY(-20px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(92, 9, 78, 0.25);
+}
+
+.gallery-card:nth-child(1) { height: 550px; grid-column: span 1; animation-delay: 0.1s; }
+.gallery-card:nth-child(2) { height: 550px; grid-column: span 1; animation-delay: 0.15s; }
+.gallery-card:nth-child(3) { height: 550px; grid-column: span 1; animation-delay: 0.2s; }
+.gallery-card:nth-child(4) { height: 550px; grid-column: span 1; animation-delay: 0.25s; }
+.gallery-card:nth-child(5) { height: 550px; grid-column: span 1; animation-delay: 0.3s; }
+.gallery-card:nth-child(6) { height: 550px; grid-column: span 1; animation-delay: 0.35s; }
+.gallery-card:nth-child(7) { height: 550px; grid-column: span 1; animation-delay: 0.4s; }
+.gallery-card:nth-child(8) { height: 550px; grid-column: span 1; animation-delay: 0.45s; }
+.gallery-card:nth-child(9) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(10) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(11) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(12) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(13) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(14) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+.gallery-card:nth-child(15) { height: 550px; grid-column: span 1; animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 55%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.gallery-card:hover .card-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.gallery-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+    padding: 30px;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    z-index: 2;
+    height: 35%; 
+    min-height: 150px; 
+}
+
+.gallery-card:hover .card-content {
+  background: linear-gradient(135deg, #e60ac1 0%, #e6b0cd 80%);
+  color: white;
+}
+
+.card-content h3 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: -7px;
+  color: #5c094e;
+  transition: all 0.4s ease;
+  line-height: 1.2;
+}
+
+.gallery-card:hover .card-content h3 {
+  color: white;
+  font-size: 1.65rem;
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Unbounded", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgb(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease 0.1s;
+  z-index: 2;
+  background: rgba(92, 9, 78, 0);
+  pointer-events: none;
+}
+
+.gallery-card:hover .card-description {
+  opacity: 1;
+  transform: translateY(0);
+  background: linear-gradient(135deg, rgba(230, 10, 193, 0.5), rgba(231, 138, 188, 0.9));
+
+}
+
+.card-price {
+  position: relative;
+  bottom: 10%;
+  font-family: "Unbounded", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff2f4f;
+  text-align: center;
+  transition: all 0.4s ease;
+  padding-bottom: 40px;
+}
+
+
+
+.building {
+    font-family: "Unbounded", sans-serif;
+    font-size: 30px;
+    color: #112329;
+    overflow: hidden;
+}
+
+.building-caps {
+    font-family: "Unbounded", sans-serif;
+    font-size: 30px;
+    border: 3px dashed red;
+    color: #ca292f;
+    text-align: center;
+}
+
+.building img {
+    float: left;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    width: 750px;
+    height: 350px;
+    transition: all 0.3s ease; 
+
+}
+.building-top {
+    margin-bottom: 5px;
+}
+
+
+.popular-flavors {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-evenly;
+    font-family: "Unbounded", sans-serif;
+    font-style: normal;
+    font-size: 28px;
+    color: #60251f;
+}
+
+.flavor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flavor-text {
+    border: 2px double #f4c2c2;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.flavor-item:hover .flavor-text {
+    border-color: #782c23;
+    transform: translateY(-5px);
+}
+
+
+
+.unbounded-main {
+    font-family: "Unbounded", sans-serif;
+    font-style: normal;
+    font-size: 64px;
+    color: #60251f;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 18, 196, 0.5);
+    transition: color 0.3s ease, transform 0.3s;
+    user-select: none;
+    border: double 6px #f4c2c2;
+}
+
+.unbounded-main:hover {
+    color: #782c23;
+    transform: rotateZ(0.5deg);
+}
+.absolute-note-right {
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    background-color: rgba(255, 18, 196, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 175px;
+    height: auto;
+    z-index: 10;
+    word-break: normal;
+}
+
+.notification {
+    position: fixed;
+    bottom: 200px;
+    left: 5px;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.bell {
+    width: 60px;
+    height: 60px;
+    background-color: #5c094e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(92, 9, 78, 0.3);
+}
+
+.bell:hover {
+    transform: scale(1.1);
+    background-color: #782c23;
+}
+
+.bell img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.notifications-list {
+    position: absolute;
+    bottom:90px;
+    background: white;
+    border: 2px solid #5c094e;
+    border-radius: 15px;
+    padding: 15px;
+    min-width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    box-shadow: 0 8px 25px rgba(92, 9, 78, 0.2);
+}
+
+.notification:hover .notifications-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.notification-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #5c094e;
+    transition: all 0.2s ease;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background-color: #fff0f5;
+    border-radius: 8px;
+    transform: translateX(5px);
+}
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: #fff;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    border: 2px solid #5c094e;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #5c094e;
+    color: rgb(255, 255, 255);
+}
+
+.add-to-cart {
+    position:fixed;
+    background: #ff6b6b;
+    left: 0;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.add-to-cart:hover {
+    background: #419e34;
+    transform: scale(1.05);
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #5c094e;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cart-count {
+    background: #ff2f4f;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    border: 2px solid #5c094e;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 300px;
+    z-index: 1000;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+}
+.corzina{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+.close-cart {
+    display: flex;
+    justify-content: end;
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dark-theme .gallery-section {
+    background: linear-gradient(135deg, #2d0030 0%, #1a0f1a 100%);
+}
+
+.dark-theme .gallery-title {
+    color: #ff6b9d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .gallery-card {
+    background: #2d0030;
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.15);
+}
+
+.dark-theme .gallery-card:hover {
+    box-shadow: 0 25px 60px rgba(255, 107, 157, 0.25);
+}
+
+.dark-theme .card-content {
+    background: #2d0030;
+}
+
+.dark-theme .gallery-card:hover .card-content {
+    background: linear-gradient(135deg, #ff2f4f 0%, #ff6b9d 80%);
+}
+
+.dark-theme .card-content h3 {
+    color: #ff6b9d;
+}
+
+.dark-theme .gallery-card:hover .card-content h3 {
+    color: #1a0f1a;
+}
+
+.dark-theme .card-price {
+    color: #ff2f4f;
+}
+
+.dark-theme .flavor-item img{
+    filter: invert(100%)
+}
+.dark-theme .building {
+    color: #e0e0e0;
+}
+
+.dark-theme .building-caps {
+    color: #ff6b9d;
+    border-color: #ff6b9d;
+}
+
+.dark-theme .popular-flavors {
+    color: #ff6b9d;
+}
+
+.dark-theme .flavor-text {
+    border-color: #ff6b9d;
+}
+
+.dark-theme .flavor-item:hover .flavor-text {
+    border-color: #ff2f4f;
+}
+
+.dark-theme .unbounded-main {
+    color: #ff6b9d;
+    background-color: rgba(255, 107, 157, 0.2);
+    border-color: #ff6b9d;
+}
+
+.dark-theme .unbounded-main:hover {
+    color: #ff2f4f;
+}
+
+.dark-theme .absolute-note-right {
+    background-color: rgba(255, 107, 157, 0.8);
+    color: #1a0f1a;
+}
+
+.dark-theme .bell {
+    background-color: #ff6b9d;
+}
+
+.dark-theme .bell:hover {
+    background-color: #ff2f4f;
+}
+
+.dark-theme .notifications-list {
+    background: #2d0030;
+    border-color: #ff6b9d;
+    color: #e0e0e0;
+}
+
+.dark-theme .notification-item {
+    color: #ff6b9d;
+    border-bottom-color: #ff6b9d;
+}
+
+.dark-theme .notification-item:hover {
+    background-color: rgba(255, 107, 157, 0.1);
+}
+
+.dark-theme .filter-btn {
+    background: #2d0030;
+    color: #ff6b9d;
+    border-color: #ff6b9d;
+}
+
+.dark-theme .filter-btn.active,
+.dark-theme .filter-btn:hover {
+    background: #ff6b9d;
+    color: #2d0030;
+}
+
+.dark-theme .add-to-cart {
+    background: #ff6b9d;
+    color: #1a0f1a;
+}
+
+.dark-theme .add-to-cart:hover {
+    background: #ff2f4f;
+}
+
+.dark-theme .cart-icon {
+    background: #ff6b9d;
+    color: #1a0f1a;
+}
+
+.dark-theme .cart-modal {
+    background: #2d0030;
+    border-color: #ff6b9d;
+    color: #e0e0e0;
+}
+
+.dark-theme .close-cart {
+    background: #ff2f4f;
+    color: white;
+}

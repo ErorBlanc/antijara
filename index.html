@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name = "viewport" content=" width=device-width, initial-scale =1,  maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="logo.jpg">
+   <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>АНТИЖАРА</title>
+</head>
+<body>
+    <selection> <!-- секция заголовка, шапка-->
+       <header class="header">
+         <a href="index.html" class="logo-link">
+    <div class="logotype">
+        <img src="logogo.png" alt="Логотип">
+    </div>
+</a>
+
+<a href="index.html" class="header-link">
+    <div class="nunito">
+        <h1 class="header-title">АНТИЖАРА</h1>
+    </div>
+</a>
+           <div class="menu-wrapper">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="burger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </label>
+  <nav class="menu">
+    <ul class="menu-list">
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="help.html">Поддержка</a></li>
+    <li><a href="register.html">Регистрация</a></li>
+      <button id="theme-toggle" class="theme-toggle"></button>
+
+    </ul>
+  </nav>
+</div>
+
+</header>
+</selection>
+
+
+
+<section class="gallery-section">
+    <div class="gallery-container">
+        <h2 class="gallery-title" id = "top2">НАША КОЛЛЕКЦИЯ МОРОЖЕНОГО</h2>
+        <!-- Фильтры -->
+<div class="filters">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="шоколадное">Шоколадное</button>
+    <button class="filter-btn" data-filter="ванильное">Ванильное</button>
+    <button class="filter-btn" data-filter="фруктовое">Фруктовое</button>
+    <button class="filter-btn" data-filter="пломбир">Пломбир</button>
+</div>
+        <div class="gallery-grid">
+            <!-- Карточка 1 -->
+            <div class="gallery-card" data-category="пломбир">
+                <div class="card-image">
+                    <img src="plombir.png" alt="Пломбир классический">
+                    <div class="card-description">
+                        Настоящий пломбир с 15% жирности. Нежная кремовая текстура и насыщенный сливочный вкус.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ПЛОМБИР КЛАССИЧЕСКИЙ</h3>
+                    <div class="card-price">250₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="gallery-card" data-category="ванильное">
+                <div class="card-image">
+                    <img src="morsliv.png" alt="Сливочное мороженое">
+                    <div class="card-description">
+                        Нежное сливочное мороженое с натуральной ванилью. Идеальный баланс вкуса и текстуры.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>СЛИВОЧНОЕ ВАНИЛЬНОЕ</h3>
+                    <div class="card-price">200₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="gallery-card" data-category="шоколадное">
+                <div class="card-image">
+                    <img src="eskimo.png" alt="Эскимо шоколадное">
+                    <div class="card-description">
+                        Мороженое на палочке в глазури из бельгийского шоколада. Хрустящее снаружи, нежное внутри.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ЭСКИМО ШОКОЛАДНОЕ</h3>
+                    <div class="card-price">180₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="gallery-card" data-category="фруктовое">
+                <div class="card-image">
+                    <img src="sorbet.png" alt="Сорбет ягодный">
+                    <div class="card-description">
+                        Освежающий сорбет из смеси лесных ягод без молочных продуктов. Легкий и низкокалорийный.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>СОРБЕТ ЯГОДНЫЙ МИКС</h3>
+                    <div class="card-price">220₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="gallery-card" data-category="шоколадное">
+                <div class="card-image">
+                    <img src="lacomka.png" alt="Лакомка шоколадная">
+                    <div class="card-description">
+                        Премиальное мороженое с 20% жирности и кусочками шоколада. Для настоящих гурманов.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ЛАКОМКА ШОКОЛАДНАЯ</h3>
+                    <div class="card-price">280₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="gallery-card" data-category="пломбир">
+                <div class="card-image">
+                    <img src="fistashka.png" alt="Пломбир фисташковый">
+                    <div class="card-description">
+                        Пломбир с натуральной фисташковой пастой и кусочками фисташек. Необычный изысканный вкус.
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ПЛОМБИР ФИСТАШКОВЫЙ</h3>
+                    <div class="card-price">270₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+            <!-- Карточка 7 -->
+            <div class="gallery-card" data-category="пломбир">
+                <div class="card-image">
+                    <img src="dubai.png" alt="Пломбир дубайский">
+                    <div class="card-description">
+                        Невероятно богатый и сложный вкус, где благородная горчинка шоколада сливается с нежностью пломбира
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ДУБАЙСКИЙ  ПЛОМБИР</h3>
+                    <div class="card-price">550₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="gallery-card" data-category="фруктовое">
+                <div class="card-image">
+                    <img src="fructled.png" alt="Фруктовый леденец">
+                    <div class="card-description">
+                        Фруктовый леденец с кусочками спелой маракуйи и цитрусовой цедрой. Взрывная свежесть тропиков, где сладость тающего льда сменяется яркой кислинкой и тонкой горчинкой цедры.
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ФРУКТОВЫЙ ЛЕДЕНЕЦ</h3>
+                    <div class="card-price">140₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 9 -->
+            <div class="gallery-card" data-category="фруктовое" >
+                <div class="card-image">
+                    <img src="clubnika.png" alt="Клубничное">
+                    <div class="card-description">
+                    Стаканчик с целыми ягодами лесной клубники и тонкими нотками ванили. Нежность сливочной основы и взрывная сочность спелых ягод в каждом кусочке. Вкус настоящего лета.                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>КЛУБНИЧНОЕ СЛИВОЧНОЕ</h3>
+                    <div class="card-price">210₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 10 -->
+            <div class="gallery-card" data-category="ванильное">
+                <div class="card-image">
+                    <img src="vanil.png" alt="Ванильный стаканчик">
+                    <div class="card-description">
+                    Нежность сливочной основы и тёплый, бархатный аромат натуральной ванили. Простота, в которой раскрывается истинная роскошь вкуса.                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ВАНИЛЬНЫЙ СТАКАНЧИК</h3>
+                    <div class="card-price">300₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 11 -->
+            <div class="gallery-card" data-category="ванильное">
+                <div class="card-image">
+                    <img src="decadet.png" alt="decadetskoe">
+                    <div class="card-description">
+                        Не просто мороженое, а десертный опыт. Плотная, обволакивающая сладость ванили, пронзенная терпкой карамелью и благородной горчинкой.
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ДЕКАДЕНТСКОЕ ВАНИЛЬНОЕ</h3>
+                    <div class="card-price">540₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 12 -->
+            <div class="gallery-card" data-category="шоколадное">
+                <div class="card-image">
+                    <img src="shokolad.png" alt="withNUTS">
+                    <div class="card-description">
+                        Пломбир на палочке в глазури из бельгийского шоколада с кешью и крошкой вафельного рожка. Два вида хруста, два оттенка шоколада и нежная сливочная основа. Наслаждение в каждом укусе.
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ШОКОЛАДНОЕ С ОРЕХАМИ</h3>
+                    <div class="card-price">360₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 13 -->
+            <div class="gallery-card" data-category="шоколадное">
+                <div class="card-image">
+                    <img src="rozhok.png" alt="rozhok">
+                    <div class="card-description">
+                        Самый самый самый нежный шоколад в сочетании с хрустящим рожком...Шоколадный топпинг, хрустящие орешки. Что нужно еще для счастья?
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>РОЖОК ШОКОЛАДНЫЙ</h3>
+                    <div class="card-price">195₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 14 -->
+            <div class="gallery-card" data-category="фруктовое">
+                <div class="card-image">
+                    <img src="circles.png" alt="circles">
+                    <div class="card-description">
+                        Фруктовые сливочные шарики, что можно еще сказать? Вкус лета. Вкус детства.
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ФРУКТОВЫЕ ШАРИКИ</h3>
+                    <div class="card-price">170₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка 15 -->
+            <div class="gallery-card" data-category="пломбир">
+                <div class="card-image">
+                    <img src="slibki.png" alt="slibki">
+                    <div class="card-description">
+                        Сливочный пломбирчик , чисто для расчилла, просто посидеть похрумкать, получить удовольствие и все будет хорошо.
+                    
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>СЛИВОЧНЫЙ ПЛОМБИР</h3>
+                    <div class="card-price">200₽</div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<div class="notification">
+             <div class="bell">
+                <img src = "phone.png">  
+             </div>
+             <div class="notifications-list">
+        <div class="notification-item">Промокод на бесплатную доставку</div>
+                <div class="notification-item">Скидка 20%</div>
+            <div class="notification-item">Новый вкус</div>
+  </div>
+</div>
+    <br>
+
+<div class ="unbounded-cont">
+    <div class = "unbounded-main">
+        НАШИ ПАРТНЕРЫ <br>
+    </div>
+</div>
+<section class="popular-flavors"> 
+  <div class="flavor-item">
+    <a href = https://kriper200.github.io/www2/ > 
+    <img src="meditation.png" height="200" width="200">
+    </a>
+    <div class="flavor-text">ПУТЬ ЖИЗНИ</div>
+  </div>
+  <div class="flavor-item">
+    <img src="library.png" height="200" width="200">
+    <div class="flavor-text">К.БИБЛИОТЕКА</div>
+  </div>
+  <div class="flavor-item">
+    <img src="footbal.png" height="200" width="200">
+    <div class="flavor-text">SCOUTID</div>
+  </div>
+  <div class = "absolute-note-right">
+    всем реальный респект
+  </div>
+</section>
+    
+<!-- kорзина -->
+<div class="cart-icon" id="cartIcon">
+    🛒 <span class="cart-count">0</span>
+</div>
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+        <div class = "corzina"> Корзина </div>
+        <div class="cart-items"></div>
+        <button class="close-cart">Закрыть</button>
+    </div>
+</div>
+
+<!-- нижняя панель навигации-->
+<footer class="footer-grid">
+  <div class="footer-section about">
+    <h4>About Us</h4>
+    <p>Маленькая компания с большим потенциалом.<br> Больше информации о нас можно получить через соцсети:</p>
+    <div class="footer-socials">
+      <a href="#" class="footer-social-btn instagram" title="Instagram"><img src="inst.png" alt="instagram"></a>
+      <a href="#" class="footer-social-btn apple" title="Apple"><img src="apple.png" alt="apple"></a>
+      <a href="#" class="footer-social-btn telegram" title="Telegram"><img src="telegram.png" alt="telegram"></a>
+    </div>
+  </div>
+  <div class="footer-section quick">
+    <h4>Quick Links</h4>
+    <a href="about.html">FAQ</a>
+    <a href="help.html">HELP</a>
+    <a href="index.html">HOME</a>
+    <a href="review.html">REVIEWS</a>
+
+  </div>
+<div class="footer-section shop">
+    <h4>Shop</h4>
+    <a href="index.html" class="footer-filter" data-filter="all">ALL АССОРТИМЕНТ</a>
+    <a href="index.html" class="footer-filter" data-filter="шоколадное">CHOCOLATE</a>
+    <a href="index.html" class="footer-filter" data-filter="пломбир">PLOMBIR</a>
+    <a href="index.html" class="footer-filter" data-filter="фруктовое">FRUIT</a>
+    <a href="index.html" class="footer-filter" data-filter="ванильное">VANILLA</a>
+</div>
+  <div class="footer-section contact">
+    <h4>Contact Us</h4>
+    <a href="tel:7777777777">+7777777777</a>
+    <a href="mailto:antijara@gmail.com">antijara@gmail.com</a>
+  </div>
+</footer>
+<script src="theme.js"></script>
+<script src="javka.js"></script>
+<script src="footer-js.js"></script>
+</body>
+</html>

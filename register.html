@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация — Антижара</title>
+    <meta name = "viewport" content=" width=device-width, initial-scale = 1">
+
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="register-style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <selection> <!-- секция заголовка, шапка-->
+       <header class="header">
+         <a href="index.html" class="logo-link">
+    <div class="logotype">
+        <img src="logogo.png" alt="Логотип">
+    </div>
+</a>
+
+<a href="index.html" class="header-link">
+    <div class="nunito">
+        <h1 class="header-title">АНТИЖАРА</h1>
+    </div>
+</a>
+           <div class="menu-wrapper">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="burger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </label>
+  <nav class="menu">
+    <ul class="menu-list">
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="help.html">Поддержка</a></li>
+    <li><a href="register.html">Регистрация</a></li>
+      <button id="theme-toggle" class="theme-toggle"></button>
+
+    </ul>
+  </nav>
+</div>
+
+</header>
+</selection>
+
+<main class="register-page">
+    <section class="register-main">
+        <!-- фоновые квадраты -->
+        <div class="bg-square sq-1"></div>
+        <div class="bg-square sq-2"></div>
+        <div class="bg-square sq-3"></div>
+        <div class="bg-square sq-4"></div>
+
+        <div class="glass-modal">
+            <div class="form-tabs">
+                <!-- переключатель вкладок -->
+                <input type="radio" name="form-tab" id="tab-register" checked>
+                <input type="radio" name="form-tab" id="tab-login">
+
+                <div class="tabs-switch">
+                    <label for="tab-register" class="tab-btn">Регистрация</label>
+                    <label for="tab-login" class="tab-btn">Вход</label>
+                </div>
+
+                <div class="forms-container">
+                    <!-- форма регистрации -->
+                    <div class="register-form">
+                        <form class="glassmorphism-form">
+                            <fieldset>
+                                <legend>Создать аккаунт</legend>
+
+                                <div class="input-group">
+                                    <label for="fio">ФИО</label>
+                                    <input type="text" id="fio" name="fio" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="phone">Телефон</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="email">Почта</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="password">Пароль</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+
+                                <button type="submit" class="form-submit">Зарегистрироваться</button>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- форма входа -->
+                    <div class="login-form">
+                        <form class="glassmorphism-form">
+                            <fieldset>
+                                <legend>Войти</legend>
+
+                                <div class="input-group">
+                                    <label for="login-phone">Телефон или почта</label>
+                                    <input type="text" id="login-phone" name="login-phone" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="login-password">Пароль</label>
+                                    <input type="password" id="login-password" name="login-password" required>
+                                </div>
+
+                                <button type="submit" class="form-submit">Войти</button>
+
+                                <div class="restore-wrap">
+                                    <label for="show-restore" class="restore-link">Восстановить пароль?</label>
+                                    <input type="checkbox" id="show-restore">
+
+                                    <div class="restore-form">
+                                        <div class="restore-fields">
+                                            <label for="restore-contact">Почта или телефон</label>
+                                            <input type="text" id="restore-contact" name="restore-contact">
+                                        </div>
+                                        <button type="button" class="form-submit restore-btn">
+                                            Восстановить
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-grid">
+    <div class="footer-section about">
+        <h4>About Us</h4>
+<p>Маленькая компания с большим потенциалом.<br> Больше информации о нас можно получить через соцсети:</p>        <div class="footer-socials">
+            <a href="#" class="footer-social-btn instagram" title="Instagram">
+                <img src="inst.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer-social-btn apple" title="Apple">
+                <img src="apple.png" alt="Apple">
+            </a>
+            <a href="#" class="footer-social-btn telegram" title="Telegram">
+                <img src="telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-section quick">
+        <h4>Quick Links</h4>
+        <a href="about.html">FAQ</a>
+        <a href="help.html">HELP</a>
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEWS</a>
+    </div>
+
+    <div class="footer-section shop">
+        <h4>Shop</h4>
+        <a href="index.html" class="footer-filter" data-filter="all">ALL АССОРТИМЕНТ</a>
+    <a href="index.html" class="footer-filter" data-filter="шоколадное">CHOCOLATE</a>
+    <a href="index.html" class="footer-filter" data-filter="пломбир">PLOMBIR</a>
+    <a href="index.html" class="footer-filter" data-filter="фруктовое">FRUIT</a>
+    <a href="index.html" class="footer-filter" data-filter="ванильное">VANILLA</a>
+    </div>
+
+    <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <a href="tel:77777777777777777777">77777777777777777777</a>
+        <a href="mailto:antijara@gmail.com">antijara@gmail.com</a>
+    </div>
+</footer>
+<script src="theme.js"></script>
+<script src="javka.js"></script>
+<script src="footer-js.js"></script>
+</body>
+</html>

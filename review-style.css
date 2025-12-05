@@ -1,0 +1,138 @@
+.reviews-page {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 100%);
+            min-height: 80vh;
+            padding: 40px 20px;
+        }
+.reviews-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+.reviews-title {
+        font-family: "Unbounded", sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #5c094e;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        }
+.review-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(92, 9, 78, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(92, 9, 78, 0.15);
+}
+
+.review-question {
+    border-bottom: 2px solid #ffe4ec;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.review-user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.review-user {
+    font-weight: 700;
+    color: #5c094e;
+    font-size: 1.1rem;
+ }
+
+.review-date {
+    color: #888;
+    font-size: 0.9rem;
+ }
+
+.review-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.review-answer {
+    background: #fff7fc;
+    border-radius: 15px;
+    padding: 20px;
+    border-left: 4px solid #fe47b2;
+}
+
+.answer-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.answer-company {
+    font-weight: 700;
+    color: #fe47b2;
+    font-size: 1.1rem;
+}
+
+.answer-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.answer-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+       
+
+.dark-theme .reviews-page {
+    background: linear-gradient(135deg, #2d0030 0%, #1a0f1a 100%);
+}
+
+.dark-theme .reviews-title {
+    color: #ff6b9d;
+        }
+
+.dark-theme .review-card {
+    background: #2d0030;
+    box-shadow: 0 5px 20px rgba(255, 107, 157, 0.1);
+}
+
+.dark-theme .review-card:hover {
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+}
+
+.dark-theme .review-question {
+    border-bottom-color: #ff6b9d;
+}
+
+.dark-theme .review-user {
+    color: #ff6b9d;
+}
+
+.dark-theme .review-text {
+        color: #e0e0e0;
+}
+
+.dark-theme .review-answer {
+    background: rgba(255, 107, 157, 0.1);
+    border-left-color: #ff6b9d;
+}
+.dark-theme .answer-company {
+    color: #ff6b9d;
+}
+
+.dark-theme .answer-text {
+    color: #e0e0e0;
+}

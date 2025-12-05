@@ -1,0 +1,180 @@
+.support-contact-block {
+    font-family: "Unbounded", sans-serif;
+    margin: 0 auto 40px auto;
+    width: 90vw;
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 0 70px 0;
+}
+.support-contact-form {
+    position: relative;
+    width: 60vw;
+    max-width: 900px;
+    padding: 38px 34px 34px 34px;
+    border-radius: 26px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.support-contact-form h2 {
+    color: #fe47b2;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.13em;
+    padding: 15px 100px;
+    border: 1px solid rgba(254, 71, 178, 0.3); 
+    border-radius: 25px;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto 20px;
+    backdrop-filter: blur(5px);
+}
+.form-row {
+    display: flex;
+    gap: 26px;
+}
+.input-block {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-block label {
+    color: #fe47b2;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 2px;
+    margin-bottom: 1px;
+}
+
+.input-block input,
+.input-block textarea {
+    border: none;
+    border-bottom: 2.2px solid var(--primary-pink, #fe47b2);
+    color: #ea217d;
+    font-size: 1.5rem;
+    padding: 7px 9px;
+    outline: none;
+    border-radius: 8px 8px 0 0;
+    transition: border-color 0.25s, color 0.18s;
+    resize: none;
+    font-family: inherit;
+}
+
+.input-block input:focus,
+.input-block textarea:focus {
+    border-bottom-color: #ea217d;
+    background: #fff7fc;
+    color: #d11165;
+}
+
+.input-block.wide {
+    margin-top: 8px;
+}
+
+.support-submit {
+  font-family: "Unbounded", sans-serif;
+    margin-top: 18px;
+    width: 220px;
+    padding: 13px 0;
+    background: linear-gradient(135deg, #fe47b2 45%, #fe47b2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    align-self: center;
+    letter-spacing: 0.05em;
+    transition: transform 0.13s, box-shadow 0.13s;
+}
+
+.support-submit:hover,
+.support-submit:focus {
+    color: #fff6fa;
+    transform: scale(1.06) translateY(-2px);
+    box-shadow: 0 8px 32px #ffb6e7;
+}
+
+.bg-square {
+    --square-size: 180px;
+    --animation-duration: 20s;
+
+    position: absolute;
+    width: var(--square-size);
+    height: var(--square-size);
+    background: linear-gradient(130deg, #ffdaf3 0%, #ffabd7 45%, #fea0e2 100%);
+    border-radius: 15px;
+    opacity: 0.23;
+    animation: float-pink var(--animation-duration) infinite ease-in-out;
+    z-index: 0;
+    filter: blur(2px);
+}
+
+.sq-1 { top: 8%; left: 5%; animation-delay: 0s; }
+.sq-2 { top: 75%; right: 6%; animation-delay: -6s; }
+.sq-3 { bottom: 8%; left: 25%; animation-delay: -10s; }
+.sq-4 { top: 15%; right: 25%; animation-delay: -16s; }
+
+@keyframes float-pink {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(calc(var(--square-size) * 1.2), calc(var(--square-size) * -0.8)) rotate(65deg); }
+    50% { transform: translate(calc(var(--square-size) * 0.7), calc(var(--square-size) * 1.3)) rotate(125deg); }
+    75% { transform: translate(calc(var(--square-size) * -1.2), calc(var(--square-size) * 0.9)) rotate(190deg); }
+}
+.dark-theme .support-contact-block {
+    background: transparent;
+}
+
+.dark-theme .support-contact-form {
+    background: rgba(45, 0, 48, 0.3);
+    border-color: rgba(255, 107, 157, 0.3);
+    box-shadow:
+        0 4px 44px 2px rgba(255, 107, 157, 0.2),
+        0 2px 14px 2px rgba(255, 107, 157, 0.1);
+}
+
+.dark-theme .support-contact-form h2 {
+    color: #ff6b9d;
+}
+
+.dark-theme .input-block label {
+    color: #ff6b9d;
+}
+
+.dark-theme .input-block input,
+.dark-theme .input-block textarea {
+    background: rgba(255, 107, 157, 0.1);
+    border-bottom-color: #ff6b9d;
+    color: #ff6b9d;
+}
+
+.dark-theme .input-block input:focus,
+.dark-theme .input-block textarea:focus {
+    border-bottom-color: #ff2f4f;
+    background: rgba(255, 107, 157, 0.2);
+    color: #ff2f4f;
+}
+
+.dark-theme .support-submit {
+    background: linear-gradient(135deg, #ff6b9d 45%, #ff2f4f 100%);
+    color: #1a0f1a;
+}
+
+.dark-theme .support-submit:hover,
+.dark-theme .support-submit:focus {
+    background: linear-gradient(112deg, #ff2f4f 20%, #ff6b9d 100%);
+    color: #1a0f1a;
+}
+
+.dark-theme .bg-square {
+    background: linear-gradient(130deg, #ff2f4f 0%, #ff6b9d 45%, #fe47b2 100%);
+}
