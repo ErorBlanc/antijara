@@ -81,11 +81,11 @@
                                     <label for="fio">ФИО</label>
                                     <input type="text" id="fio" name="fio" required>
                                 </div>
-
-                                <div class="input-group">
-                                    <label for="phone">Телефон</label>
-                                    <input type="tel" id="phone" name="phone" required>
+                                    <div class="input-group">
+                                     <label for="phone">Телефон</label>
+                                      <input type="tel" id="phone" name="phone" placeholder="+7XXXXXXXXXX" pattern="^\+7\d{10}$"        oninput="this.value = this.value.replace(/[^0-9+]/g, '');" maxlength="12"  required >
                                 </div>
+
 
                                 <div class="input-group">
                                     <label for="email">Почта</label>
